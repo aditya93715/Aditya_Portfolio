@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 import slide1 from "../assets/Aditya1.png";
 import slide2 from "../assets/Aditya2.png";
 // Mobile-only versions — framed/cropped differently so nothing important gets cut off on small screens
-import mob1 from "../assets/mob1.png";
-import mob2 from "../assets/mob2.png";
+import mob1 from "../assets/mob2.png";
+import mob2 from "../assets/mob1.png";
 
 const slides = [
   {
