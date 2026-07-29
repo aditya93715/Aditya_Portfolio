@@ -1,6 +1,6 @@
 ## About Me
 
-I am a Full Stack Developer and Server Developer with hands-on, production experience building and supporting scalable MERN stack applications end to end — from API design through deployment. I am comfortable owning server-side responsibilities in both Linux (Ubuntu) and Windows environments, and I have delivered three live, production applications during my time as a developer: the RHT Monitor Dashboard, the Freetrack multi-level tracking and admin platform, and my company's official corporate website. I am known for taking full ownership of assigned modules, writing clean and maintainable code, and collaborating closely with cross-functional teams to ship reliable software on schedule. I am also actively building expertise in agentic AI and LLM-integrated development — including LangChain/LangGraph workflows, RAG pipelines, and MCP-based tool integration — so that I can bring AI-powered features into full stack products. You can explore more of my work on my portfolio: **[aditya-portfolio-plum-chi.vercel.app](https://vercel.com/aditya93715s-projects/aditya-portfolio)**.
+I am a Full Stack Developer and Server Developer with hands-on, production experience building and supporting scalable MERN stack applications end to end — from API design through deployment. I am comfortable owning server-side responsibilities in both Linux (Ubuntu) and Windows environments, and I have delivered three live, production applications during my time as a developer: the RHT Monitor Dashboard, the Freetrack multi-level tracking and admin platform, and my company's official corporate website. I am known for taking full ownership of assigned modules, writing clean and maintainable code, and collaborating closely with cross-functional teams to ship reliable software on schedule. I am also actively building expertise in agentic AI and LLM-integrated development — including LangChain/LangGraph workflows, RAG pipelines, and MCP-based tool integration — so that I can bring AI-powered features into full stack products. You can explore more of my work on my portfolio:(https://aditya-portfolio-sigma-pearl.vercel.app/)**.
 
 ## Professional Experience
 
@@ -36,4 +36,4 @@ I am currently focused on four key areas of growth. First, **agentic AI and LLM-
 📞 +91 9371508037
 🔗 [LinkedIn]:https://linkedin.com/in/aditya-yadav-b4b611357
 🔗 [GitHub]:https://github.com/aditya93715
-🔗 [Portfolio]:https://vercel.com/aditya93715s-projects/aditya-portfolio
+🔗 [Portfolio]:https://aditya-portfolio-sigma-pearl.vercel.app/
