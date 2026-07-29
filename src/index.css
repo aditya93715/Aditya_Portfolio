@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  /* Extra breakpoint for finer control between phones and tablets */
+  --breakpoint-xs: 30rem; /* 480px */
+
+  /* Palette — Professional Navy Portfolio Theme */
+  --color-crimson: #06314b;       /* primary navy — buttons, brand marks */
+  --color-crimson-dark: #042534;  /* darker navy — hover / pressed states */
+  --color-crimson-light: #0e7490; /* dark aqua-blue accent — used for CGPA / role badges */
+  --color-highlight: #0f766e;     /* teal — accent headline highlight + all buttons */
+  --color-cream: #f7f5f0;         /* soft off-white — page background (not stark white) */
+  --color-cream-dark: #ece7db;    /* muted warm gray — secondary sections, cards */
+  --color-ink: #0a2436;           /* deep navy-charcoal — hero overlay & dark sections */
+  --color-slate: #12374b;         /* secondary dark accent */
+  --color-slate-light: #1c4a63;   /* lighter secondary accent */
+
+  /* Fonts */
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Easing */
+  --ease-swift: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    /* Safety net: never let the page grow a horizontal scrollbar even if a
+       flex/grid child briefly overflows before it has a chance to wrap. */
+    overflow-x: hidden;
+  }
+  ::selection {
+    background-color: var(--color-crimson);
+    color: white;
+  }
+}
+
+@layer utilities {
+  .transition-swift {
+    transition-timing-function: var(--ease-swift);
+  }
+
+  /* Shared hover treatment for icon badge chips (Header, Hero, MegaMenu) */
+  .icon-badge-hover {
+    transition: border-color 0.3s var(--ease-swift), background-color 0.3s var(--ease-swift);
+  }
+  .icon-badge-hover:hover {
+    border-color: rgb(255 255 255 / 0.4);
+    background-color: rgb(255 255 255 / 0.1);
+  }
+
+  /* Hides the native scrollbar (including the up/down arrow buttons you see
+     in Chrome/Edge on Windows) while the element remains fully scrollable
+     via wheel, trackpad, touch, or keyboard. Applied to any element with
+     class="scrollbar-hide". */
+  .scrollbar-hide {
+    -ms-overflow-style: none;   /* IE and Edge */
+    scrollbar-width: none;      /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;               /* Chrome, Safari, Opera */
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
